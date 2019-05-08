@@ -27,14 +27,14 @@ import javax.swing.table.DefaultTableModel;
 public class Controller_Training {
     String fullPath;
     private ArrayList<String> ListImageTraining = null; // nampung list image
-    private DocumenReader dr = new DocumenReader();
+    private final DocumenReader dr = new DocumenReader();
 
     public void SetTableImageTraining(DefaultTableModel model_image_training, JTable TB_Training) {
         model_image_training.addColumn("No"); // buat kolom
         model_image_training.addColumn("Part");
         model_image_training.addColumn("Type");
         // ngatur besar kolom table
-        TB_Training.setAutoResizeMode(TB_Training.AUTO_RESIZE_OFF);
+        TB_Training.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         TB_Training.getColumnModel().getColumn(0).setPreferredWidth(50);
         TB_Training.getColumnModel().getColumn(1).setPreferredWidth(300);
         TB_Training.getColumnModel().getColumn(2).setPreferredWidth(50);

@@ -92,7 +92,7 @@
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                       <Component id="BT_Load_Training" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="L_Citra_Training2" min="-2" pref="100" max="-2" attributes="0"/>
@@ -106,14 +106,14 @@
                               <Component id="l_iterasi" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="tf_iterasi" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="bt_training" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="bt_saveweight" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jScrollPane1" min="-2" pref="282" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="74" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="bt_saveweight" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="57" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -250,7 +250,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="CB_Blood" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="BT_Load" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BT_LoadTesting" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -287,7 +287,7 @@
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="L_BloodType" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="CB_Blood" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="BT_Load" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="BT_LoadTesting" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                   <Component id="jScrollPane2" min="-2" pref="309" max="-2" attributes="0"/>
@@ -372,13 +372,13 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JButton" name="BT_Load">
+                <Component class="javax.swing.JButton" name="BT_LoadTesting">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Load DataTesting"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BT_LoadActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BT_LoadTestingActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="BT_akurasi">

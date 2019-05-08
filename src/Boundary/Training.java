@@ -77,7 +77,7 @@ public class Training extends javax.swing.JFrame {
         L_Citra_Testing = new javax.swing.JLabel();
         L_BloodType = new javax.swing.JLabel();
         CB_Blood = new javax.swing.JComboBox<>();
-        BT_Load = new javax.swing.JButton();
+        BT_LoadTesting = new javax.swing.JButton();
         BT_akurasi = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         L_Citra_Testing1 = new javax.swing.JLabel();
@@ -163,7 +163,7 @@ public class Training extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(BT_Load_Training)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(L_Citra_Training2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -176,12 +176,12 @@ public class Training extends javax.swing.JFrame {
                         .addComponent(l_iterasi)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_iterasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(bt_training)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(bt_saveweight))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(bt_training))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addGap(12, 12, 12)
+                .addComponent(bt_saveweight)
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Training", jPanel1);
@@ -221,11 +221,11 @@ public class Training extends javax.swing.JFrame {
             }
         });
 
-        BT_Load.setText("Load DataTesting");
-        BT_Load.setEnabled(false);
-        BT_Load.addActionListener(new java.awt.event.ActionListener() {
+        BT_LoadTesting.setText("Load DataTesting");
+        BT_LoadTesting.setEnabled(false);
+        BT_LoadTesting.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BT_LoadActionPerformed(evt);
+                BT_LoadTestingActionPerformed(evt);
             }
         });
 
@@ -249,7 +249,7 @@ public class Training extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CB_Blood, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(BT_Load)))
+                        .addComponent(BT_LoadTesting)))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(84, 84, 84)
@@ -276,7 +276,7 @@ public class Training extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(L_BloodType)
                             .addComponent(CB_Blood, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BT_Load))
+                            .addComponent(BT_LoadTesting))
                         .addGap(44, 44, 44)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -336,7 +336,7 @@ public class Training extends javax.swing.JFrame {
     
     private void enable_testing(){
         CB_Blood.setEnabled(true);
-        BT_Load.setEnabled(true);
+        BT_LoadTesting.setEnabled(true);
         BT_Classification.setEnabled(true);
         BT_akurasi.setEnabled(true);
     }
@@ -356,9 +356,9 @@ public class Training extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CB_BloodActionPerformed
 
-    private void BT_LoadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BT_LoadActionPerformed
+    private void BT_LoadTestingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BT_LoadTestingActionPerformed
         
-    }//GEN-LAST:event_BT_LoadActionPerformed
+    }//GEN-LAST:event_BT_LoadTestingActionPerformed
 
     private void BT_Load_TrainingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BT_Load_TrainingActionPerformed
         // TODO add your handling code here:
@@ -402,7 +402,7 @@ public class Training extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BT_Classification;
-    private javax.swing.JButton BT_Load;
+    private javax.swing.JButton BT_LoadTesting;
     private javax.swing.JButton BT_Load_Training;
     private javax.swing.JButton BT_akurasi;
     private javax.swing.JComboBox<String> CB_Blood;
